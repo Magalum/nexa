@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nexa - Plataforma de IA para inclusión educativa de estudiantes con discapacidad visual">
+    <title>Nexa - Incluir es Vivir</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="container nav-container">
+                <div class="logo-container">
+                    <img src="img/logo.png" alt="Logo Nexa" class="logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-nexa">Sobre Nexa</a></li>
+                    <li><a href="#problema">El Problema</a></li>
+                    <li><a href="#solucion">Solución</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">Nexa: Incluir es Vivir</h1>
+            <p class="hero-subtitle">Inteligencia Artificial para la Inclusión Educativa</p>
+            <p class="hero-description">Una plataforma innovadora que permite a estudiantes con discapacidad visual interactuar con su entorno escolar mediante comandos de voz</p>
+            <a href="#sobre-nexa" class="btn btn-primary">Conoce Más</a>
+        </div>
+    </section>
+
+    <!-- Sobre Nexa -->
+    <section id="sobre-nexa" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">¿Qué es Nexa?</h2>
+            <div class="content-grid">
+                <div class="content-text">
+                    <p class="text-large">Nexa es una página web accesible basada en inteligencia artificial diseñada para asistir a estudiantes con discapacidad visual en entornos educativos.</p>
+                    <p>Desarrollada por el equipo Jangbi, Nexa permite la interacción por voz y reconocimiento de objetos, facilitando la autonomía y participación activa de los estudiantes en el aula.</p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <span class="feature-icon">🎤</span>
+                            <h3>Comandos de Voz</h3>
+                            <p>Interacción natural mediante voz</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">👁️</span>
+                            <h3>Reconocimiento Visual</h3>
+                            <p>Descripción del entorno en tiempo real</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔊</span>
+                            <h3>Síntesis de Voz</h3>
+                            <p>Respuestas auditivas claras y rápidas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-image">
+                    <img src="img/image_niño.png" alt="Estudiante con discapacidad visual usando tecnología en el aula" class="rounded-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- El Problema -->
+    <section id="problema" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">El Problema que Abordamos</h2>
+            <div class="problem-content">
+                <div class="stat-box">
+                    <span class="stat-number">71%</span>
+                    <p class="stat-text">de niños con discapacidad asisten a la escuela</p>
+                </div>
+                <div class="problem-text">
+                    <p class="text-large">La poca adaptabilidad de los colegios para apoyar a personas con discapacidad visual es un problema real en Colombia.</p>
+                    <ul class="problem-list">
+                        <li>No todos los estudiantes aprenden braille</li>
+                        <li>Los profesores no siempre están calificados</li>
+                        <li>Recursos limitados en las instituciones</li>
+                        <li>Impresoras braille que no funcionan o tiempo limitado</li>
+                        <li>Dificultad para interactuar con el entorno físico (escaleras, puertas, objetos)</li>
+                    </ul>
+                    <p class="highlight-text">¿Cómo pueden los colegios apoyar a estos estudiantes para que no sean excluidos de su derecho a la educación?</p>
+                </div>
+            </div>
+            <div class="image-gallery">
+                <img src="img/image_barrera1.png" alt="Estudiante con discapacidad visual enfrentando barreras en el aula" class="gallery-image">
+                <img src="img/image_barreras2.png" alt="Profesor asistiendo a estudiante con discapacidad visual" class="gallery-image">
+                <img src="img/image_barreras3.png" alt="Estudiante usando bastón en entorno escolar" class="gallery-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- La Solución -->
+    <section id="solucion" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Nuestra Solución</h2>
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <h3>¿Cómo Funciona?</h3>
+                    <p>Nexa funciona a través de una interfaz accesible que permite a estudiantes con discapacidad visual interactuar con el sistema mediante comandos de voz.</p>
+                    <p>El usuario puede recibir información sobre su entorno escolar, acceder a contenidos educativos y activar funciones específicas sin necesidad de visión.</p>
+                    <img src="img/imageSolución.png" alt="Estudiante interactuando con Nexa mediante voz" class="solution-image">
+                </div>
+                <div class="solution-card">
+                    <h3>Tecnologías Utilizadas</h3>
+                    <ul class="tech-list">
+                        <li><strong>Backend:</strong> Python con Flask</li>
+                        <li><strong>Base de Datos:</strong> MySQL con XAMPP y phpMyAdmin</li>
+                        <li><strong>Frontend:</strong> HTML5 y CSS3 con Flexbox</li>
+                        <li><strong>Reconocimiento de Voz:</strong> speech_recognition</li>
+                        <li><strong>Síntesis de Voz:</strong> pyttsx3</li>
+                        <li><strong>IA Asistente:</strong> Microsoft Copilot</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="objectives">
+                <h3>Objetivos del Proyecto</h3>
+                <div class="objectives-grid">
+                    <div class="objective-card">
+                        <h4>Objetivo General</h4>
+                        <p>Desarrollar una Inteligencia artificial eficiente, interactiva y funcional que le ofrezca una excelente experiencia al estudiante, implementando el comando de voz como interfaz de interacción en tiempo real.</p>
+                    </div>
+                    <div class="objective-card">
+                        <h4>Objetivos Específicos</h4>
+                        <ol>
+                            <li>Identificar las barreras de accesibilidad que enfrentan los estudiantes</li>
+                            <li>Diseñar una estructura funcional de IA con comando de voz</li>
+                            <li>Implementar un prototipo que reconozca elementos del entorno</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios" class="section section-accent">
+        <div class="container">
+            <h2 class="section-title">Impacto y Beneficios</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <span class="benefit-icon">👥</span>
+                    <h3>Social</h3>
+                    <p>Nexa permite que los estudiantes con discapacidad visual se muevan y aprendan con más autonomía en su colegio. Les permite saber qué hay a su alrededor usando solo su voz, sin depender de braille ni de alguien que los guíe.</p>
+                    <p class="benefit-highlight">Se sienten más seguros, más incluidos y más capaces de participar como cualquier otro compañero.</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">💰</span>
+                    <h3>Económico</h3>
+                    <p>Al ser una página web, Nexa funciona en equipos que ya tienen los colegios, sin necesidad de comprar tecnología costosa. Esto la hace accesible para instituciones con pocos recursos.</p>
+                    <p class="benefit-highlight">Abre oportunidades reales para que los estudiantes estudien, se capaciten y trabajen en el futuro.</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">🌱</span>
+                    <h3>Ambiental</h3>
+                    <p>Como Nexa funciona en línea, evita el uso de materiales físicos como libros impresos en braille, guías adaptadas o mapas táctiles. Esto reduce el consumo de papel y tinta.</p>
+                    <p class="benefit-highlight">Promueve el uso responsable de la tecnología existente y fomenta una educación más sostenible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo -->
+    <section id="equipo" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Equipo Jangbi</h2>
+            <h4 class="section-title">"El primer paso, empieza por nosotros"</h4>
+            <div class="team-header">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Captura%20de%20pantalla%202025-11-05%20204853-NCawMThM2ZvIvIxo63lpU3Idb8L85W.png" alt="Logo Jangbi" class="team-logo">
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="img/imageGabriela.png" alt="Gabriela Ortega Cuy">
+                    </div>
+                    <h3>Gabriela Ortega Cuy</h3>
+                    <p class="member-role">Líder del Equipo</p>
+                    <p>Programadora, Diseñadora y Analista. Coordinó las tareas, guió el proceso de desarrollo y aseguró la coherencia entre las distintas etapas del proyecto.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="img/imageMatthew.png" alt="Matthew Steban García Quiñonez">
+                    </div>
+                    <h3>Matthew Steban García Quiñonez</h3>
+                    <p class="member-role">Desarrollador Multifuncional</p>
+                    <p>Diseñador, Programador y Analista. Contribuyó en la parte visual, desarrollo técnico y evaluación funcional del proyecto.</p>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Información del Proyecto</h3>
+                <ul class="info-list">
+                    <li><strong>Categoría:</strong> Inclusión Social y Diversidad</li>
+                    <li><strong>Institución:</strong> Carlos Albán Holguín</li>
+                    <li><strong>Centro de Formación:</strong> Centro de Electricidad, Electrónica y Telecomunicaciones</li>
+                    <li><strong>Instructora:</strong> Angela Giselle Fonseca García</li>
+                    <li><strong>Ubicación:</strong> Bogotá DC, Colombia</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados -->
+    <section id="resultados" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Resultados y Validación</h2>
+            <div class="results-content">
+                <div class="result-box">
+                    <h3>Prototipo Funcional</h3>
+                    <p>Se desarrolló un prototipo funcional que incluye:</p>
+                    <ul>
+                        <li>Módulos de registro e inicio de sesión</li>
+                        <li>Reconocimiento por voz y cámara</li>
+                        <li>Diseño enfocado en accesibilidad</li>
+                        <li>Sistema de roles y permisos</li>
+                        <li>Navegación con teclado y lectores de pantalla</li>
+                    </ul>
+                </div>
+                <div class="result-box">
+                    <h3>Producto Mínimo Viable</h3>
+                    <p>El MVP de Nexa permite:</p>
+                    <ul>
+                        <li>Registro e inicio de sesión por voz o formulario web</li>
+                        <li>Validación segura con hash de contraseñas</li>
+                        <li>Asignación de roles básicos</li>
+                        <li>Retroalimentación hablada mediante síntesis de voz</li>
+                        <li>Navegación por voz entre páginas</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feedback-section">
+                <h3>Retroalimentación Recibida</h3>
+                <div class="feedback-grid">
+                    <div class="feedback-item positive">
+                        <p>✓ Utilidad del reconocimiento por voz en entornos educativos inclusivos</p>
+                    </div>
+                    <div class="feedback-item positive">
+                        <p>✓ Navegación accesible con teclado y lectores de pantalla</p>
+                    </div>
+                    <div class="feedback-item improvement">
+                        <p>→ Mejorar precisión en ambientes ruidosos</p>
+                    </div>
+                    <div class="feedback-item improvement">
+                        <p>→ Agregar opción visible para recuperación de contraseña</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Futuro -->
+    <section id="futuro" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Visión a Futuro</h2>
+            <div class="future-content">
+                <p class="text-large">Sabemos que Nexa está apenas comenzando. Es nuestra versión 1, y aunque ya funciona, tenemos muchas ideas para seguir mejorando.</p>
+                <div class="future-grid">
+                    <div class="future-card">
+                        <h3>🎯 Mejoras Planeadas</h3>
+                        <ul>
+                            <li>Voz más natural y menos robótica</li>
+                            <li>Acceso completamente por voz sin necesidad de escribir</li>
+                            <li>Conversión a aplicación móvil</li>
+                            <li>Mayor precisión en ambientes ruidosos</li>
+                            <li>Modularización del código</li>
+                        </ul>
+                    </div>
+                    <div class="future-card">
+                        <h3>💭 Nuestro Sueño</h3>
+                        <p>Queremos que Nexa no se quede solo como una página web, sino que se convierta en una app que muchas personas puedan usar desde cualquier lugar.</p>
+                        <p class="highlight-text">Tal vez algún día Nexa crezca tanto que sea reconocida como una herramienta clave para la inclusión digital.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section section-accent">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <p class="text-large">¿Quieres saber más sobre Nexa o colaborar con nosotros?</p>
+                <p>Estamos abiertos a colaboraciones, sugerencias y oportunidades para llevar Nexa a más instituciones educativas.</p>
+                <div class="contact-info">
+                    <p><strong>Equipo Jangbi</strong></p>
+                    <p>Centro de Electricidad, Electrónica y Telecomunicaciones</p>
+                    <p>Carlos Albán Holguín - Bogotá DC, Colombia</p>
+                    <p>Gmail:jangbi.nex@gmail.com</p>
+                    <a href="https://www.instagram.com/jangbi.nex?utm_source=qr&igsh=MWVnanE4OGprb3lwNg==">Instagram</a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="img/logo.png" alt="Logo Nexa" class="footer-logo">
+                    <p>Incluir es Vivir</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Proyecto</h4>
+                    <ul>
+                        <li><a href="#sobre-nexa">Sobre Nexa</a></li>
+                        <li><a href="#problema">El Problema</a></li>
+                        <li><a href="#solucion">Solución</a></li>
+                        <li><a href="#equipo">Equipo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Evento</h4>
+                    <p>Hack 4 Future 2025</p>
+                    <p>Categoría: Inclusión Social y Diversidad</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nexa - Equipo Jangbi. Todos los derechos reservados.</p>
+                <p>Desarrollado con ❤️ para la inclusión educativa</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
