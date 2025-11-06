@@ -767,6 +767,152 @@ a:hover {
   opacity: 0.7;
 }
 
+/* Link Grid Section */
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-md);
+  align-items: stretch;
+  margin-top: var(--spacing-md);
+}
+
+.link-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--color-white);
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  height: 140px;
+  overflow: hidden;
+}
+
+.link-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.link-card-inner {
+  height: 100%;
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--spacing-xs);
+}
+
+.link-card-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+.link-card-title {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  min-height: 1.2em;
+  cursor: text;
+  outline: none;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* Placeholder text when title is empty */
+.link-card-title:empty:before {
+  content: "Pulsa para editar título";
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+/* Focus style for editable title */
+.link-card-title:focus {
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.18);
+  background: rgba(102,126,234,0.04);
+}
+
+/* Small description */
+.link-card-desc {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  opacity: 0.9;
+}
+
+/* Accessibility: focus visible */
+.link-card:focus {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 3px;
+}
+
+/* Responsive for the link cards */
+@media (max-width: 900px) {
+  .link-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .link-card {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .link-grid {
+    grid-template-columns: 1fr;
+  }
+  .link-card {
+    height: 100px;
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* Presentación Canva */
+.presentation-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.canva-embed {
+    position: relative;
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.canva-embed iframe {
+    display: block;
+    border-radius: var(--radius-lg);
+}
+
+.presentation-info {
+    text-align: center;
+    margin-top: var(--spacing-md);
+}
+
+.presentation-info .text-large {
+    margin-bottom: var(--spacing-md);
+    color: var(--text-light);
+}
+
+/* Responsive para la presentación */
+@media (max-width: 768px) {
+    .canva-embed iframe {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .canva-embed iframe {
+        height: 300px;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-menu {
